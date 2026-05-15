@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Глобал Плюс — Премиальные сайты для бизнеса | Пятигорск</title>
+  <meta name="description" content="Глобал Плюс — создаём премиальные веб-решения, которые переводят ваш бизнес в высшую лигу. B2B-лиды, кинематографичный дизайн, высокая конверсия. Офис: Пятигорск, ул. Крайнего, 49.">
+  <link rel="icon" type="image/png" href="assets/logo.png">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Глобал Плюс","url":"https://unityspirit.github.io/global-plus/","logo":"https://unityspirit.github.io/global-plus/assets/logo.png","address":{"@type":"PostalAddress","streetAddress":"ул. Крайнего, зд. 49","addressLocality":"Пятигорск","addressRegion":"Ставропольский край","postalCode":"357501","addressCountry":"RU"},"telephone":"+7-800-000-00-00","description":"Разработка премиальных сайтов и веб-решений для бизнеса"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <img src="assets/logo.png" alt="Глобал Плюс" class="loader-logo-img">
+        <span>ГЛОБАЛ <span class="gold">ПЛЮС</span></span>
+      </div>
+      <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+      <div class="loader-pct" id="loaderPct">0%</div>
+    </div>
+  </div>
+
+  <!-- CANVAS -->
+  <canvas id="scrollCanvas"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <img src="assets/logo.png" alt="Глобал Плюс" class="logo-img">
+        <span class="logo-text">ГЛОБАЛ <span class="gold">ПЛЮС</span></span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="#" class="nav-link active" data-section="0">Главная</a>
+        <a href="#" class="nav-link" data-section="1">О нас</a>
+        <a href="#" class="nav-link" data-section="2">Проблематика</a>
+        <a href="#" class="nav-link" data-section="3">Решения</a>
+        <a href="#" class="nav-link" data-section="4">Кейсы</a>
+        <a href="#" class="nav-link" data-section="5">Процесс</a>
+        <a href="#" class="nav-link" data-section="6">Контакты</a>
+      </nav>
+      <a href="tel:+78000000000" class="header-cta">Обсудить проект</a>
+      <button class="burger" id="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#" class="nav-link" data-section="0">Главная</a>
+      <a href="#" class="nav-link" data-section="1">О нас</a>
+      <a href="#" class="nav-link" data-section="2">Проблематика</a>
+      <a href="#" class="nav-link" data-section="3">Решения</a>
+      <a href="#" class="nav-link" data-section="4">Кейсы</a>
+      <a href="#" class="nav-link" data-section="5">Процесс</a>
+      <a href="#" class="nav-link" data-section="6">Контакты</a>
+    </nav>
+  </header>
+
+  <div class="scroll-container" id="scrollContainer">
+
+    <!-- 0: HERO -->
+    <section class="page" id="page-0">
+      <div class="page-inner hero-content">
+        <div class="hero-badge">WEB · DESIGN · DIGITAL · ПЯТИГОРСК</div>
+        <h1 class="hero-title">
+          <span class="hero-line1">ПЕРЕВОДИМ</span>
+          <span class="hero-line2">БИЗНЕС</span>
+          <span class="hero-line3 gold-text">В ВЫСШУЮ ЛИГУ</span>
+        </h1>
+        <p class="hero-sub">Создаём премиальные сайты, которые не просто красиво выглядят — они работают как лучший менеджер по продажам: 24/7, без выходных, без ошибок.</p>
+        <div class="hero-buttons">
+          <a href="#" class="btn btn-primary" data-section="6">Обсудить проект</a>
+          <a href="#" class="btn btn-outline" data-section="6">Аудит вашей ниши</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num gold-text">200+</span><span class="stat-label">Ниш охвачено</span></div>
+          <div class="stat"><span class="stat-num gold-text">3×</span><span class="stat-label">Рост конверсии</span></div>
+          <div class="stat"><span class="stat-num gold-text">14</span><span class="stat-label">Дней до релиза</span></div>
+          <div class="stat"><span class="stat-num gold-text">100%</span><span class="stat-label">Гарантия результата</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 1: О НАС -->
+    <section class="page" id="page-1">
+      <div class="page-inner">
+        <h2 class="section-title">О компании <span class="gold-text">Глобал Плюс</span></h2>
+        <p class="section-sub">Реальная компания. Реальный офис. Реальные результаты.</p>
+        <div class="about-layout">
+          <div class="about-main card reveal">
+            <p class="about-lead">Мы — команда, которая устала от посредственности в региональном digital-рынке. Пока другие студии делают сайты-визитки на шаблонах, мы строим <strong>цифровые активы</strong>, которые приносят B2B-лиды и оправдывают высокий чек.</p>
+            <p>Наш офис в Пятигорске (ул. Крайнего, зд. 49) — это не просто адрес. Это сигнал: мы местные, мы понимаем Кавказский рынок, мы доступны для встречи. При этом наши стандарты — федеральный и международный уровень.</p>
+            <p>Каждый проект начинается с глубокого анализа ниши: кто ваш клиент, почему он выбирает конкурента, и как мы это исправим визуально и технически.</p>
+          </div>
+          <div class="about-cards">
+            <div class="card reveal"><div class="card-icon">🎯</div><h3>Фокус на результат</h3><p>Не "красивый дизайн", а измеримый рост заявок. KPI прописываем в договоре.</p></div>
+            <div class="card reveal"><div class="card-icon">⚡</div><h3>Скорость</h3><p>14 рабочих дней от брифа до релиза. Без затягивания, без правок в бесконечность.</p></div>
+            <div class="card reveal"><div class="card-icon">🌍</div><h3>Понимаем рынок СНГ</h3><p>Знаем специфику Кавказа, Москвы, Казахстана. Адаптируем под каждый регион.</p></div>
+            <div class="card reveal"><div class="card-icon">🔒</div><h3>Юридическая защита</h3><p>ООО "Глобал Плюс". Работаем по договору с прописанными сроками и гарантиями.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2: ПРОБЛЕМАТИКА -->
+    <section class="page" id="page-2">
+      <div class="page-inner">
+        <h2 class="section-title">Почему <span class="gold-text">вы теряете деньги</span> прямо сейчас</h2>
+        <p class="section-sub">Устаревший сайт — это не эстетика. Это прямые убытки.</p>
+        <div class="problems-grid">
+          <div class="problem-card card reveal">
+            <div class="problem-num">01</div>
+            <h3>Реклама сжигается впустую</h3>
+            <p><strong>Боль:</strong> Яндекс.Директ приводит трафик, но заявок нет. Причина — сайт не конвертирует.</p>
+            <p class="problem-result">→ Среднестатистический бизнес теряет <span class="gold-text">60–80% рекламного бюджета</span> из-за плохого лендинга.</p>
+          </div>
+          <div class="problem-card card reveal">
+            <div class="problem-num">02</div>
+            <h3>B2B-партнёры уходят к конкурентам</h3>
+            <p><strong>Боль:</strong> Корпоративный клиент открывает ваш сайт и закрывает через 3 секунды. Дизайн 2015 года = нет доверия = нет сделки.</p>
+            <p class="problem-result">→ <span class="gold-text">73% B2B-решений</span> принимаются после оценки цифрового присутствия компании.</p>
+          </div>
+          <div class="problem-card card reveal">
+            <div class="problem-num">03</div>
+            <h3>Вы не можете обосновать высокий чек</h3>
+            <p><strong>Боль:</strong> Клиент спрашивает почему дорого. Сайт за него не отвечает — он выглядит дешевле, чем ваши услуги стоят.</p>
+            <p class="problem-result">→ Премиальный сайт <span class="gold-text">сам продаёт ценность</span> до разговора с менеджером.</p>
+          </div>
+          <div class="problem-card card reveal">
+            <div class="problem-num">04</div>
+            <h3>Отсутствие в мобильном интернете</h3>
+            <p><strong>Боль:</strong> 78% ваших потенциальных клиентов смотрят с телефона. Если сайт не адаптирован — вас для них не существует.</p>
+            <p class="problem-result">→ Mobile-first — не опция. Это <span class="gold-text">обязательный стандарт 2025 года.</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3: РЕШЕНИЯ -->
+    <section class="page" id="page-3">
+      <div class="page-inner">
+        <h2 class="section-title">Наши <span class="gold-text">решения</span></h2>
+        <p class="section-sub">Три продукта. Один стандарт — бескомпромиссно высокий.</p>
+        <div class="solutions-grid">
+          <div class="solution-card card glass reveal">
+            <div class="solution-icon">🎬</div>
+            <div class="solution-tag">ФЛАГМАН</div>
+            <h3>Кинематографичный сайт</h3>
+            <p>Scroll-driven анимация на 672 кадра, видео-фон в формате WebP, секции как сцены фильма. Для компаний, которым нужно WOW-эффект с первой секунды.</p>
+            <ul class="solution-features">
+              <li>Canvas ScrollEngine — плавная анимация</li>
+              <li>VEO 3.1 видео-фон эксклюзивно</li>
+              <li>Мобильная и десктоп версии</li>
+              <li>Загрузка за 3 секунды</li>
+            </ul>
+            <div class="solution-price">от 120 000 ₽</div>
+          </div>
+          <div class="solution-card card glass reveal">
+            <div class="solution-icon">🏢</div>
+            <div class="solution-tag">B2B</div>
+            <h3>Корпоративный B2B-портал</h3>
+            <p>Многостраничный сайт для компаний с развитой структурой. Каталог услуг, кабинет клиента, интеграция с CRM, онлайн-расчёт стоимости.</p>
+            <ul class="solution-features">
+              <li>React/Next.js — быстрый и масштабируемый</li>
+              <li>Интеграция с AmoCRM / Битрикс24</li>
+              <li>SEO под региональные запросы</li>
+              <li>Telegram-бот уведомления</li>
+            </ul>
+            <div class="solution-price">от 80 000 ₽</div>
+          </div>
+          <div class="solution-card card glass reveal">
+            <div class="solution-icon">📈</div>
+            <div class="solution-tag">КОНВЕРСИЯ</div>
+            <h3>Сайт для сферы услуг</h3>
+            <p>Высококонверсионный лендинг для клиник, салонов, ресторанов, автосервисов. Упор на скорость загрузки, онлайн-запись, отзывы, акции.</p>
+            <ul class="solution-features">
+              <li>Форма захвата с Telegram-уведомлением</li>
+              <li>Онлайн-запись / калькулятор цены</li>
+              <li>Schema.org для локального SEO</li>
+              <li>Яндекс.Карты и геолокация</li>
+            </ul>
+            <div class="solution-price">от 45 000 ₽</div>
+          </div>
+        </div>
+        <div class="niches-section reveal">
+          <h3 class="niches-title">Работаем с <span class="gold-text">любой нишей</span></h3>
+          <div class="niches-tags">
+            <span>Медицина</span><span>Стоматология</span><span>СПА</span><span>Рестораны</span><span>HoReCa</span>
+            <span>Строительство</span><span>Архитектура</span><span>Дизайн интерьера</span><span>IT-аутсорсинг</span>
+            <span>Юридические услуги</span><span>Клининг</span><span>Автосервис</span><span>Детейлинг</span>
+            <span>Фитнес</span><span>Образование</span><span>Туризм</span><span>Логистика</span><span>Производство</span>
+            <span>Мебель на заказ</span><span>Ветеринария</span><span>Груминг</span><span>Полиграфия</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4: КЕЙСЫ -->
+    <section class="page" id="page-4">
+      <div class="page-inner">
+        <h2 class="section-title">Наши <span class="gold-text">кейсы</span></h2>
+        <p class="section-sub">Реальные проекты. Измеримые результаты.</p>
+        <div class="cases-grid">
+          <div class="case-card card reveal">
+            <div class="case-niche">🏥 Медицина</div>
+            <h3>Косметологическая клиника «Европа»</h3>
+            <p class="case-task"><strong>Задача:</strong> Перезапустить сайт, потерявший 70% трафика после обновления Яндекса. Повысить конверсию в запись.</p>
+            <div class="case-result">
+              <span class="result-item">+340% заявок</span>
+              <span class="result-item">14 дней</span>
+              <span class="result-item">Кинематографичный</span>
+            </div>
+            <a href="https://unityspirit.github.io/europa-clinic/" target="_blank" class="case-link">Смотреть проект →</a>
+          </div>
+          <div class="case-card card reveal">
+            <div class="case-niche">🚗 Автобизнес</div>
+            <h3>Премиум-детейлинг «Elite»</h3>
+            <p class="case-task"><strong>Задача:</strong> Привлечь клиентов с дорогими автомобилями. Визуально обосновать ценник в 3× выше среднего по рынку.</p>
+            <div class="case-result">
+              <span class="result-item">+220% выручка</span>
+              <span class="result-item">12 дней</span>
+              <span class="result-item">Scroll-анимация</span>
+            </div>
+            <a href="https://unityspirit.github.io/elite-detailing/" target="_blank" class="case-link">Смотреть проект →</a>
+          </div>
+          <div class="case-card card reveal">
+            <div class="case-niche">🏗️ Строительство</div>
+            <h3>«СтройПро» — строительство домов</h3>
+            <p class="case-task"><strong>Задача:</strong> Создать сайт, способный конкурировать с московскими застройщиками при региональных ценах.</p>
+            <div class="case-result">
+              <span class="result-item">Топ-3 по СКФ</span>
+              <span class="result-item">14 дней</span>
+              <span class="result-item">B2B-лиды</span>
+            </div>
+            <a href="https://unityspirit.github.io/stroyka-pro/" target="_blank" class="case-link">Смотреть проект →</a>
+          </div>
+          <div class="case-card card reveal">
+            <div class="case-niche">🎨 Дизайн</div>
+            <h3>«АрхДизайн» — архитектурная студия</h3>
+            <p class="case-task"><strong>Задача:</strong> Привлечь клиентов с бюджетом от 2 500 ₽/м² на архитектурное проектирование. Показать уровень через визуал.</p>
+            <div class="case-result">
+              <span class="result-item">+180% лидов</span>
+              <span class="result-item">Playfair + Gold</span>
+              <span class="result-item">7 секций</span>
+            </div>
+            <a href="https://unityspirit.github.io/arch-design/" target="_blank" class="case-link">Смотреть проект →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5: СХЕМА РАБОТЫ -->
+    <section class="page" id="page-5">
+      <div class="page-inner">
+        <h2 class="section-title">Схема <span class="gold-text">работы</span></h2>
+        <p class="section-sub">Прозрачный пайплайн от брифинга до B2B-лидов</p>
+        <div class="process-flow">
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">01</div>
+            <div class="step-icon">📋</div>
+            <h3>Брифинг</h3>
+            <p>Созвон или встреча в офисе. Погружаемся в бизнес: кто клиент, кто конкурент, что продаём, какой чек. 60 минут — и мы знаем всё необходимое.</p>
+            <div class="step-time">День 1</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">02</div>
+            <div class="step-icon">🔍</div>
+            <h3>Анализ ниши</h3>
+            <p>Изучаем ТОП-5 конкурентов. Выявляем их слабые места. Определяем, что нужно показать на сайте, чтобы клиент выбрал вас — не их.</p>
+            <div class="step-time">День 2–3</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">03</div>
+            <div class="step-icon">✏️</div>
+            <h3>UX/UI Дизайн</h3>
+            <p>Прототип → Дизайн-система → Полная визуализация всех экранов. Согласование в 1–2 итерации. Без "сделайте как у Apple" без ТЗ.</p>
+            <div class="step-time">День 4–8</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">04</div>
+            <div class="step-icon">⚙️</div>
+            <h3>Сборка</h3>
+            <p>Вёрстка, кинематографичный видео-фон, интеграция форм с CRM и Telegram-ботом, SEO-оптимизация, адаптив. Тест на 12 устройствах.</p>
+            <div class="step-time">День 9–13</div>
+          </div>
+          <div class="process-arrow">→</div>
+          <div class="process-step card reveal">
+            <div class="step-num gold-text">05</div>
+            <div class="step-icon">🚀</div>
+            <h3>Релиз</h3>
+            <p>Деплой, настройка домена, подключение аналитики. Первые заявки из рекламы — в тот же день. Поддержка 30 дней после релиза включена.</p>
+            <div class="step-time">День 14</div>
+          </div>
+        </div>
+        <div class="process-guarantee card reveal">
+          <span class="guarantee-icon">🛡️</span>
+          <div><strong>Гарантия результата:</strong> Если сайт не показывает рост конверсии в течение 30 дней — дорабатываем бесплатно до достижения KPI, прописанного в договоре.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6: КОНТАКТЫ -->
+    <section class="page" id="page-6">
+      <div class="page-inner">
+        <h2 class="section-title">Оставьте заявку на <span class="gold-text">разбор ниши</span></h2>
+        <p class="section-sub">Бесплатный аудит: покажем, что теряет ваш бизнес из-за текущего сайта</p>
+        <div class="contact-layout">
+          <form class="contact-form card reveal" id="contactForm">
+            <input type="text" placeholder="Ваше имя и компания" required id="inputName">
+            <input type="tel" placeholder="+7 (___) ___-__-__" required id="inputPhone">
+            <select id="inputNiche">
+              <option value="">Ваша ниша</option>
+              <option>Медицина / Красота</option>
+              <option>Рестораны / HoReCa</option>
+              <option>Строительство / Ремонт</option>
+              <option>Архитектура / Дизайн</option>
+              <option>IT / Консалтинг</option>
+              <option>Автобизнес / Детейлинг</option>
+              <option>Фитнес / Спорт</option>
+              <option>Образование</option>
+              <option>Туризм / Отели</option>
+              <option>Производство</option>
+              <option>Другое</option>
+            </select>
+            <select id="inputBudget">
+              <option value="">Бюджет на сайт</option>
+              <option>45 000 – 80 000 ₽</option>
+              <option>80 000 – 120 000 ₽</option>
+              <option>120 000 – 200 000 ₽</option>
+              <option>от 200 000 ₽</option>
+            </select>
+            <textarea placeholder="Что хотите получить от сайта? Какой сейчас сайт (ссылка)?" rows="3" id="inputMessage"></textarea>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Получить бесплатный аудит ниши</button>
+            <p class="form-note">Ответим в течение 2 часов в рабочее время. Без спама.</p>
+          </form>
+          <div class="contact-info">
+            <div class="card contact-card reveal">
+              <div class="contact-row"><span class="contact-icon">📍</span><div><strong>Офис</strong><span>Пятигорск, ул. Крайнего, зд. 49<br>Ставропольский край, 357501</span></div></div>
+              <div class="contact-row"><span class="contact-icon">📞</span><div><strong>Телефон</strong><a href="tel:+78000000000">+7 (800) 000-00-00</a></div></div>
+              <div class="contact-row"><span class="contact-icon">📧</span><div><strong>Email</strong><a href="mailto:info@globalplus.ru">info@globalplus.ru</a></div></div>
+              <div class="contact-row"><span class="contact-icon">💬</span><div><strong>Telegram</strong><a href="https://t.me/globalplus" target="_blank">@globalplus</a></div></div>
+              <div class="contact-row"><span class="contact-icon">🕐</span><div><strong>Режим работы</strong><span>Пн–Пт: 09:00 – 19:00<br>Сб: 10:00 – 15:00</span></div></div>
+            </div>
+            <div class="card contact-legal reveal">
+              <p class="legal-title">Реквизиты</p>
+              <p>ООО «Глобал Плюс»</p>
+              <p>г. Пятигорск, ул. Крайнего, зд. 49</p>
+              <p>ИНН / ОГРН: по запросу</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end scroll-container -->
+
+  <script src="app.js"></script>
+</body>
+</html>
